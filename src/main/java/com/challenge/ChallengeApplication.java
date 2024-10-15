@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = "com.challenge.parsers")
 @OpenAPIDefinition(info = @Info(title = "Challenge API", version = "1.0", description = "Challenge API"))
+@SuppressWarnings("unchecked")
 public class ChallengeApplication {
 
 	public static void main(String[] args) {
