@@ -1,0 +1,24 @@
+name: Run Tests and Build Application
+
+on: pull_request
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JAVA
+      uses: actions/setup-java@v2
+      with:
+        java-version: '21'
+        distribution: ''
+
+    - name: Build with Maven
+      run: mvnw clean install
+
+    - name: Run tests
+      run: mvnw test
+
