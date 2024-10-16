@@ -2,15 +2,19 @@
 
 ## 🎯 Objetivo do desafio
 
+
 Criar um sistema para transformar arquivos de entrada em um novo formato de saída. O sistema deve ser capaz de ler
 arquivos de texto e gerar um arquivo de saída com base em regras de negócios específicas.
+
 ---
 ## 📄 Overview
+
 
 Este projeto é um desafio técnico do LuizaLabs. O objetivo é criar uma API para upload, processamento e gerenciamento de
 arquivos. A API suporta upload de múltiplos arquivos de texto e os processa de acordo com a lógica de negócios definida
 na aplicação. Também é possível utilizar o sistema de arquivos via diretório com programação automática de leitura e
 processamento.
+
 ---
 ## 📚 Table of Contents
 
