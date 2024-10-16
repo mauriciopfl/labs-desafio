@@ -1,30 +1,40 @@
 # LuizaLabs - Desafio técnico
 
-## Objetivo do desafio
+## 🎯 Objetivo do desafio
 
 Criar um sistema para transformar arquivos de entrada em um novo formato de saída. O sistema deve ser capaz de ler
 arquivos de texto e gerar um arquivo de saída com base em regras de negócios específicas.
-
-## Overview
+---
+## 📄 Overview
 
 Este projeto é um desafio técnico do LuizaLabs. O objetivo é criar uma API para upload, processamento e gerenciamento de
 arquivos. A API suporta upload de múltiplos arquivos de texto e os processa de acordo com a lógica de negócios definida
 na aplicação. Também é possível utilizar o sistema de arquivos via diretório com programação automática de leitura e
 processamento.
+---
+## 📚 Table of Contents
 
-## Table of Contents
+* [LuizaLabs - Desafio técnico](#luizalabs---desafio-técnico)
+  * [🎯 Objetivo do desafio](#-objetivo-do-desafio)
+  * [📄 Overview](#-overview)
+  * [📚 Table of Contents](#-table-of-contents)
+  * [🚀 Features (características)](#-features-características)
+  * [🛠 Getting Started](#-getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [Running the Application](#running-the-application)
+    * [⏱️ Scheduler](#-scheduler)
+    * [Propriedades](#propriedades)
+    * [Mapeamento de Colunas](#mapeamento-de-colunas)
+  * [📡 API Endpoints](#-api-endpoints)
+    * [Upload Files](#upload-files)
+    * [Execução manual](#execução-manual)
+  * [💡 Sugestões de Melhoria](#-sugestões-de-melhoria)
+  * [🌳 Estrutura do Projeto](#-estrutura-do-projeto)
 
-- [Overview](#overview)
-- [Features](#Features)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Estrutura do Projeto](#Estrutura-do-Projeto)
- 
 
-## Features (características)
+--- 
+## 🚀 Features (características)
 
 - Agendar processamento de arquivo
 - Parametrização de mapeamento de colunas
@@ -35,8 +45,8 @@ processamento.
 - Logs de aplicação com SLF4J e Logback
 - Testes de unidade com JUnit e Mockito
 - Testes de integração com Spring Boot Test
-
-## Getting Started
+---
+## 🛠 Getting Started
 
 ### Prerequisites
 
@@ -114,8 +124,8 @@ processamento.
 2. O aplicativo iniciará em `http://localhost:8080`.
 3. Acesse a documentação do Swagger em `http://localhost:8080/swagger-ui.html`.
 4. Logs da aplicação são exibidos no console ou no arquivo `logs/application.log`.
-
-### Scheduler
+---
+### ⏱️ Scheduler
 
 A aplicação está configurada para mover os arquivos automáticamente de acordo com o parametro `ìnterval.to.execute`.
 Você pode ajustar a expressão cron no arquivo `application.properties` conforme necessário.
@@ -149,8 +159,8 @@ order.value.end=87
 order.date.start=87
 order.date.end=95
 ```
-
-## API Endpoints
+---
+## 📡 API Endpoints
 
 ### Upload Files
 
@@ -172,8 +182,19 @@ order.date.end=95
   input). Geralmente usado caso o Scheduler esteja desativado.
 - **Response:**
     - `200 OK`:  Retorna a lista de arquivos processados. 
+---
+## 💡 Sugestões de Melhoria
+ - Finalização e melhorias do CI/CD (Workflow Github Actions)
+ - Adicionar camada de segurança (Autenticação e Autorização)
+ - Endpoint para consultar os LOG`s da aplicação
+ - Endpoint para consultar e download de arquivos processados
+ - Endpoint para consultar e download de arquivos com erro
+ - Endpoint para criar arquivos a partir de um array de objetos
+ - Endpoint para deletar arquivos processados
+ 
 
-## Estrutura do Projeto
+---
+## 🌳 Estrutura do Projeto
 
 ```plaintext
 src
