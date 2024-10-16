@@ -62,7 +62,7 @@ processamento.
 
 1. Clone o repositório:
     ```sh
-    git clone [https://github.com/mauriciopfl/file-upload-api.git](https://github.com/mauriciopfl/labs-desafio.git)
+    git clone https://github.com/mauriciopfl/labs-desafio.git
     cd labs-desafio
     ```
 2. Configure o arquivo application.properties conforme necessário.:
